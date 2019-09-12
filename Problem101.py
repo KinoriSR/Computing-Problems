@@ -20,7 +20,8 @@ def main():
     FIT=[]               #First Incorrect Terms list
     SumFIT=0             #sum of the FITs
     knownElements=[]     #list of known elements of the series
-    NextUn=-1            #initializing Next 
+    NextUn=-1            #initializing Next
+    
     while(np.int(nextGuess)!=np.int(NextUn)):
         #The "given" new term is generated with this polynomial.
         CurrentUn=1.-n+n**2-n**3+n**4-n**5+n**6-n**7+n**8-n**9+n**10
