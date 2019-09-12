@@ -6,9 +6,12 @@
 #the series it was guessed from. So if the polynomial was guessed after 3 terms we need to use that polynomial to guess the 4th. Then we
 #sum all of those incorrectly guessed terms and plug them into the Project Eueler site. This problem is done for a series produced by:
 #F(n)=1.-n+n**2-n**3+n**4-n**5+n**6-n**7+n**8-n**9+n**10
+
 #Thoughts: I am getting an incorrect sum of fits despite getting the correct polynomial. I think there might be a typing issue since my 
 #function works with floats and Project Euler is asking for int. Since the coefficients of the polynomial get large at some point I think
-#there the numbers are skewed due to the nature of large floats.
+#there the numbers are skewed due to the nature of large floats. If the scipy.linalg.solve() did row reduction then it would be capable 
+#of maintaining integers. It seems that this program solves the linear equations using the inverse matrix which has a coefficient that
+#is calculated as a float.
 
 import numpy as np
 import scipy.linalg
