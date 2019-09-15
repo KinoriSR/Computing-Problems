@@ -1,4 +1,9 @@
-#For Problem 16 just carry the 10s at the end
+#For Problem 16 from projecteuler.com
+#The problem asks for the sum all of the digits 2**n where n is an input from the user. This problem asks for n to be 1000.
+#Normal 32-bit and 64bit integers are limited in size to 2**32 and 2**64 scales respectively. Although they can get a bit larger by using 
+#their remaining bits, it still was sufficient. I handled the doubling operation within an array that could grow. This allows me to 
+#create arbitrarily large powers of 2. I have considered implementing this in C to have more control over bit operations and use of 
+#memory. I have yet to explore this.
 
 def double(Num,n):
     for i in range(n):
