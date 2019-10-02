@@ -13,6 +13,8 @@
 #of maintaining integers. It seems that this program solves the linear equations using the inverse matrix which has a coefficient that
 #is calculated as a float.
 
+#More Thoughts: This is finding the coefficients of a linear model. Linear referring to the linear combination of dependencies on n. The variables (powers of n) are not independent of each other. The model here is a polynomial.This model may be able to be tweaked to find minimum error rather than exact solutions. Then it is possible this can be used to fit a polynomial to some data set. 1D input and output are necessary for this exact method. We can also probably tweak this to become a normal linear model. My final question is, is there a way to create a linear combination of functions (ie polynomials) that we sum to create a model?
+
 import numpy as np
 import scipy.linalg
 
