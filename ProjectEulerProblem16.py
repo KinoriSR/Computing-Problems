@@ -4,6 +4,7 @@
 #their remaining bits, it still was sufficient. I handled the doubling operation within an array that could grow. This allows me to 
 #create arbitrarily large powers of 2. I have considered implementing this in C to have more control over bit operations and use of 
 #memory. I have yet to explore this.
+#This can be used for ala Carte multiplication.
 
 def double(Num,n):
     for i in range(n):
