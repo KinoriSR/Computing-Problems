@@ -21,7 +21,6 @@ class Solution {
             }
             else {
                 i=dict.get(ch);
-                //dict.put(s.substring(i,i+1),i);
                 dict.clear();
                 count=0;
                 startindex=i+1;
