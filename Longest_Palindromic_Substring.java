@@ -1,35 +1,5 @@
 import java.util.*;
 class Solution {
-    //brute force is looping through starting at each index then using stack to check
-    // public boolean isPalindrome(String s){
-    //     Stack stack = new Stack();
-    //     int len=s.length();
-    //     int half=len/2;
-    //     //even case
-    //     if (len%2==0) {
-    //         for (int i=0; i<half; i++){
-    //             stack.push(s.substring(i,i+1));
-    //         }
-    //         for (int i=half; i<len; i++){
-    //             if (!s.substring(i,i+1).equals(stack.pop())){
-    //                 return false;
-    //             }
-    //         }
-    //     }
-    //     //odd case
-    //     else{
-    //         for(int i=0; i<half; i++){
-    //             stack.push(s.substring(i,i+1));
-    //         }
-    //         //skip the middle one
-    //         for(int i=half+1; i<len; i++){
-    //             if (!s.substring(i,i+1).equals(stack.pop())){
-    //                 return false;
-    //             }
-    //         }
-    //     }
-    //     return true;
-    // }
     public String longestPalindrome(String s) {
         int largest=0;
         String subS;
@@ -48,8 +18,6 @@ class Solution {
             RO=i+1;
             while (LO>=0 & RO<len & flag==1){
                 if (s.substring(LO,LO+1).equals(s.substring(RO,RO+1))){
-                    // System.out.print(s.substring(L,L+1));
-                    // System.out.println(s.substring(R,R+1));
                     countOdd+=2;
                     LO--;
                     RO++;
