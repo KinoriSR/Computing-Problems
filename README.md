@@ -1,2 +1,2 @@
 # Computing-Problems
-For storing computing/math problems/coding practice that I did for fun.
+For storing computing/math problems/coding practice that I did for fun. The problems are from Project Euler, Leetcode and HackerRank. There may be others...
