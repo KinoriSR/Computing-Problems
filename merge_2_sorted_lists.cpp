@@ -6,7 +6,6 @@ struct ListNode {
     //  ListNode(int x) : val(x), next(NULL) {}
  };
 
-// what is this: ptr->next=l1?l1:l2;
 class Solution {
 public:
     ListNode* mergeTwoLists_better(ListNode* l1, ListNode* l2) {
@@ -30,11 +29,10 @@ public:
             ret->next=l1;
         }
         return head.next;
-        // what is this: ptr->next=l1?l1:l2;
     }
 };
 
-// recursive - faster than iterative in this case
+// recursive
 class Solution {
 public:
     ListNode* mergeTwoLists_recursive(ListNode* l1, ListNode* l2) {
@@ -55,6 +53,7 @@ public:
     }
 };
 
+// when I don't think it through beforehand...
 class Solution {
 public:
     ListNode* mergeTwoLists_worse(ListNode* l1, ListNode* l2) {
