@@ -1,4 +1,4 @@
-#binary search that also finds where a number would go in an array if it is not there.
+# Binary search that also finds where a number would go in an array if it is not there.
 
 def binary_search(n,L):
     if len(L)==1 and L[0]==n:
