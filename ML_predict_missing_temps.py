@@ -1,5 +1,6 @@
 # https://www.hackerrank.com/challenges/temperature-predictions/problem
-# HackerRank problem
+# MSE: 1.876268629
+# TODO: Tune and test this and other regressors
 
 import sys
 import re
